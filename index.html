@@ -3,79 +3,119 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Pakistan mein best budget tech gadgets 2026 - Honest Reviews, Latest Deals on Daraz">
+    <meta name="keywords" content="best earbuds pakistan, power bank daraz, smart watch price, budget gadgets">
     <title>TechDeals PK - Best Budget Gadgets 2026</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
     <style>
         body { font-family: 'Inter', system-ui, sans-serif; }
+        
+        /* 3D Card Effect */
         .card {
-            transition: all 0.4s ease;
+            transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+            transform-style: preserve-3d;
         }
         .card:hover {
-            transform: translateY(-12px);
-            box-shadow: 0 20px 25px -5px rgb(0 0 0 / 0.3);
+            transform: translateY(-20px) rotateX(8deg) rotateY(8deg);
+            box-shadow: 0 35px 60px -15px rgba(0, 0, 0, 0.6);
         }
+
+        .product-img {
+            transition: transform 0.8s ease;
+        }
+        .card:hover .product-img {
+            transform: scale(1.12);
+        }
+
+        /* Smooth Scroll */
+        html { scroll-behavior: smooth; }
     </style>
 </head>
 <body class="bg-gray-950 text-white">
 
     <!-- Navbar -->
-    <nav class="bg-black sticky top-0 z-50 border-b border-gray-800">
+    <nav class="bg-black/90 backdrop-blur-md sticky top-0 z-50 border-b border-gray-800">
         <div class="max-w-7xl mx-auto px-6 py-5 flex justify-between items-center">
             <h1 class="text-4xl font-bold text-purple-400">TechDeals<span class="text-white">PK</span></h1>
+            <div class="flex gap-8 font-medium">
+                <a href="#home" class="hover:text-purple-400">Home</a>
+                <a href="#products" class="hover:text-purple-400">Products</a>
+                <a href="#blog" class="hover:text-purple-400">Blog</a>
+                <a href="#about" class="hover:text-purple-400">About</a>
+            </div>
         </div>
     </nav>
 
     <!-- Hero -->
-    <section class="bg-gradient-to-br from-purple-700 to-indigo-700 py-28 text-center">
+    <section id="home" class="bg-gradient-to-br from-purple-700 via-indigo-700 to-pink-700 py-32 text-center">
         <div class="max-w-5xl mx-auto px-6">
-            <h2 class="text-5xl md:text-6xl font-bold leading-tight">
-                Pakistan Mein Sabse Best Budget Gadgets 2026
-            </h2>
-            <p class="text-xl md:text-2xl mt-6 text-gray-200">
-                Honest Reviews • Sabse Sasti Deals on Daraz
-            </p>
+            <h2 class="text-6xl md:text-7xl font-bold mb-6">Pakistan Mein Sabse Best Budget Gadgets 2026</h2>
+            <p class="text-2xl text-gray-200">Honest Reviews • Real Deals • Daraz Special Offers</p>
         </div>
     </section>
 
-    <!-- Products -->
-    <section class="max-w-7xl mx-auto px-6 py-20">
-        <h2 class="text-4xl font-bold text-center mb-12">🔥 Trending Products</h2>
-        
-        <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+    <!-- Products Section -->
+    <section id="products" class="max-w-7xl mx-auto px-6 py-24">
+        <h2 class="text-5xl font-bold text-center mb-4">🔥 Trending Products</h2>
+        <p class="text-center text-gray-400 mb-16">Pakistan mein sabse zyada bech rahe hain</p>
 
-            <div class="card bg-gray-900 rounded-3xl p-6 border border-gray-800">
-                <img src="https://picsum.photos/id/1015/600/400" class="w-full h-56 object-cover rounded-2xl">
-                <h3 class="text-xl font-semibold mt-5">Wireless Earbuds Pro</h3>
-                <p class="text-green-400 text-3xl font-bold mt-2">₹2,499 - 4,999</p>
-                <p class="text-gray-400 mt-3">Noise Cancellation • 40 Hours Battery</p>
-                <a href="https://www.daraz.pk/catalog/?q=wireless+earbuds" target="_blank" 
-                   class="mt-6 block bg-purple-600 text-center py-4 rounded-2xl hover:bg-purple-500">Daraz Pe Khareedo →</a>
+        <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-10" id="productsContainer"></div>
+    </section>
+
+    <!-- Blog Section -->
+    <section id="blog" class="bg-gray-900 py-24">
+        <div class="max-w-7xl mx-auto px-6">
+            <h2 class="text-5xl font-bold text-center mb-12">Latest Blog Posts</h2>
+            <div class="grid md:grid-cols-2 gap-8">
+                <div class="bg-gray-800 rounded-3xl p-8">
+                    <h3 class="text-2xl font-semibold">Best Wireless Earbuds Under 5000 in Pakistan 2026</h3>
+                    <p class="text-gray-400 mt-4">Complete comparison of top 5 earbuds with real user reviews.</p>
+                    <a href="#" class="text-purple-400 mt-6 inline-block">Read More →</a>
+                </div>
+                <div class="bg-gray-800 rounded-3xl p-8">
+                    <h3 class="text-2xl font-semibold">How to Choose Right Power Bank in Pakistan</h3>
+                    <p class="text-gray-400 mt-4">Complete buying guide for summer 2026.</p>
+                    <a href="#" class="text-purple-400 mt-6 inline-block">Read More →</a>
+                </div>
             </div>
-
-            <div class="card bg-gray-900 rounded-3xl p-6 border border-gray-800">
-                <img src="https://picsum.photos/id/201/600/400" class="w-full h-56 object-cover rounded-2xl">
-                <h3 class="text-xl font-semibold mt-5">20000mAh Power Bank</h3>
-                <p class="text-green-400 text-3xl font-bold mt-2">₹1,899 - 3,499</p>
-                <p class="text-gray-400 mt-3">Fast Charging • LED Display</p>
-                <a href="https://www.daraz.pk/catalog/?q=power+bank+20000" target="_blank" 
-                   class="mt-6 block bg-purple-600 text-center py-4 rounded-2xl hover:bg-purple-500">Daraz Pe Khareedo →</a>
-            </div>
-
-            <div class="card bg-gray-900 rounded-3xl p-6 border border-gray-800">
-                <img src="https://picsum.photos/id/180/600/400" class="w-full h-56 object-cover rounded-2xl">
-                <h3 class="text-xl font-semibold mt-5">33W Fast Charger</h3>
-                <p class="text-green-400 text-3xl font-bold mt-2">₹799 - 1,599</p>
-                <p class="text-gray-400 mt-3">Super Fast Charging</p>
-                <a href="https://www.daraz.pk/catalog/?q=fast+charger" target="_blank" 
-                   class="mt-6 block bg-purple-600 text-center py-4 rounded-2xl hover:bg-purple-500">Daraz Pe Khareedo →</a>
-            </div>
-
         </div>
     </section>
 
-    <footer class="bg-black py-12 text-center text-gray-400">
-        <p>© TechDeals PK 2026 • Honest Reviews</p>
+    <!-- WhatsApp -->
+    <a href="https://wa.me/923000000000" target="_blank" class="fixed bottom-8 right-8 bg-green-500 w-16 h-16 rounded-3xl flex items-center justify-center text-4xl shadow-2xl hover:scale-110 transition z-50">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+
+    <footer class="bg-black py-16 text-center text-gray-400">
+        <p>© TechDeals PK 2026 • All Rights Reserved</p>
     </footer>
+
+    <script>
+        // Products Data
+        const products = [
+            {title: "Wireless Earbuds Pro", price: "₹2,499 - 4,999", rating: "4.6", desc: "Noise Cancellation • 40H Battery", img: "https://picsum.photos/id/1015/800/600", link: "https://www.daraz.pk/catalog/?q=wireless+earbuds"},
+            {title: "20000mAh Power Bank", price: "₹1,899 - 3,499", rating: "4.8", desc: "Fast Charging • LED Display", img: "https://picsum.photos/id/201/800/600", link: "https://www.daraz.pk/catalog/?q=power+bank+20000"},
+            {title: "33W Fast Charger", price: "₹799 - 1,599", rating: "4.5", desc: "PD + QC Support", img: "https://picsum.photos/id/180/800/600", link: "https://www.daraz.pk/catalog/?q=fast+charger"},
+            {title: "Smart Watch Ultra", price: "₹3,499 - 6,999", rating: "4.4", desc: "Calling + Fitness", img: "https://picsum.photos/id/251/800/600", link: "https://www.daraz.pk/catalog/?q=smart+watch"}
+        ];
+
+        // Render Products
+        const container = document.getElementById('productsContainer');
+        products.forEach(p => {
+            container.innerHTML += `
+                <div class="card bg-gray-900 rounded-3xl overflow-hidden border border-gray-800">
+                    <img src="${p.img}" class="product-img w-full h-64 object-cover">
+                    <div class="p-8">
+                        <h3 class="text-2xl font-semibold">${p.title}</h3>
+                        <p class="text-green-400 text-3xl font-bold mt-3">${p.price}</p>
+                        <p class="text-yellow-400 mt-2">★★★★☆ (${p.rating})</p>
+                        <p class="text-gray-400 mt-4">${p.desc}</p>
+                        <a href="${p.link}" target="_blank" class="mt-8 block bg-purple-600 hover:bg-purple-500 py-5 rounded-2xl text-center font-medium">Daraz Pe Khareedo →</a>
+                    </div>
+                </div>
+            `;
+        });
+    </script>
 </body>
 </html>
