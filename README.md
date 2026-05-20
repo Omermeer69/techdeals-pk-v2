@@ -1,1 +1,0 @@
-# techdeals-pk-v2
