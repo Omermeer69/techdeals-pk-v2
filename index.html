@@ -3,33 +3,36 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Pakistan mein best budget tech gadgets 2026 - Honest Reviews, Latest Deals on Daraz">
-    <meta name="keywords" content="best earbuds pakistan, power bank daraz, smart watch price, budget gadgets">
-    <title>TechDeals PK - Best Budget Gadgets 2026</title>
+    <meta name="description" content="Pakistan mein best budget tech gadgets 2026 - Honest Reviews aur Daraz Deals">
+    <title>TechDeals PK • Best Budget Gadgets 2026</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
     <style>
         body { font-family: 'Inter', system-ui, sans-serif; }
         
-        /* 3D Card Effect */
+        .hero-bg {
+            background: linear-gradient(135deg, #4F46E5 0%, #7C3AED 50%, #DB2777 100%);
+        }
+
         .card {
-            transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
-            transform-style: preserve-3d;
+            transition: all 0.6s cubic-bezier(0.4, 0, 0.2, 1);
         }
         .card:hover {
-            transform: translateY(-20px) rotateX(8deg) rotateY(8deg);
-            box-shadow: 0 35px 60px -15px rgba(0, 0, 0, 0.6);
+            transform: translateY(-20px) scale(1.03);
+            box-shadow: 0 30px 70px -20px rgba(124, 58, 237, 0.5);
         }
 
         .product-img {
             transition: transform 0.8s ease;
         }
         .card:hover .product-img {
-            transform: scale(1.12);
+            transform: scale(1.15);
         }
 
-        /* Smooth Scroll */
-        html { scroll-behavior: smooth; }
+        .glass {
+            background: rgba(255,255,255,0.08);
+            backdrop-filter: blur(12px);
+        }
     </style>
 </head>
 <body class="bg-gray-950 text-white">
@@ -37,46 +40,43 @@
     <!-- Navbar -->
     <nav class="bg-black/90 backdrop-blur-md sticky top-0 z-50 border-b border-gray-800">
         <div class="max-w-7xl mx-auto px-6 py-5 flex justify-between items-center">
-            <h1 class="text-4xl font-bold text-purple-400">TechDeals<span class="text-white">PK</span></h1>
-            <div class="flex gap-8 font-medium">
-                <a href="#home" class="hover:text-purple-400">Home</a>
+            <h1 class="text-4xl font-bold bg-gradient-to-r from-purple-400 to-pink-400 bg-clip-text text-transparent">TechDeals<span class="text-white">PK</span></h1>
+            <div class="flex gap-8 text-sm font-medium">
                 <a href="#products" class="hover:text-purple-400">Products</a>
                 <a href="#blog" class="hover:text-purple-400">Blog</a>
-                <a href="#about" class="hover:text-purple-400">About</a>
+                <a href="#" class="hover:text-purple-400">Deals</a>
             </div>
         </div>
     </nav>
 
     <!-- Hero -->
-    <section id="home" class="bg-gradient-to-br from-purple-700 via-indigo-700 to-pink-700 py-32 text-center">
+    <section class="hero-bg py-32 text-center">
         <div class="max-w-5xl mx-auto px-6">
             <h2 class="text-6xl md:text-7xl font-bold mb-6">Pakistan Mein Sabse Best Budget Gadgets 2026</h2>
-            <p class="text-2xl text-gray-200">Honest Reviews • Real Deals • Daraz Special Offers</p>
+            <p class="text-2xl text-gray-100">Honest Reviews • Real User Experience • Daraz Deals</p>
         </div>
     </section>
 
-    <!-- Products Section -->
+    <!-- Products -->
     <section id="products" class="max-w-7xl mx-auto px-6 py-24">
-        <h2 class="text-5xl font-bold text-center mb-4">🔥 Trending Products</h2>
-        <p class="text-center text-gray-400 mb-16">Pakistan mein sabse zyada bech rahe hain</p>
+        <h2 class="text-5xl font-bold text-center mb-4">Trending Products</h2>
+        <p class="text-center text-gray-400 mb-16">Jo log sabse zyada khareed rahe hain</p>
 
         <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-10" id="productsContainer"></div>
     </section>
 
-    <!-- Blog Section -->
+    <!-- Blog Teaser -->
     <section id="blog" class="bg-gray-900 py-24">
         <div class="max-w-7xl mx-auto px-6">
-            <h2 class="text-5xl font-bold text-center mb-12">Latest Blog Posts</h2>
+            <h2 class="text-4xl font-bold text-center mb-12">Latest Buying Guides</h2>
             <div class="grid md:grid-cols-2 gap-8">
-                <div class="bg-gray-800 rounded-3xl p-8">
-                    <h3 class="text-2xl font-semibold">Best Wireless Earbuds Under 5000 in Pakistan 2026</h3>
-                    <p class="text-gray-400 mt-4">Complete comparison of top 5 earbuds with real user reviews.</p>
-                    <a href="#" class="text-purple-400 mt-6 inline-block">Read More →</a>
+                <div class="bg-gray-800 rounded-3xl p-8 hover:bg-gray-700 transition">
+                    <h3 class="text-2xl font-semibold">Best Earbuds Under 5000 in Pakistan 2026</h3>
+                    <p class="text-gray-400 mt-4">Top 7 options ki complete comparison.</p>
                 </div>
-                <div class="bg-gray-800 rounded-3xl p-8">
-                    <h3 class="text-2xl font-semibold">How to Choose Right Power Bank in Pakistan</h3>
-                    <p class="text-gray-400 mt-4">Complete buying guide for summer 2026.</p>
-                    <a href="#" class="text-purple-400 mt-6 inline-block">Read More →</a>
+                <div class="bg-gray-800 rounded-3xl p-8 hover:bg-gray-700 transition">
+                    <h3 class="text-2xl font-semibold">Power Bank Buying Guide - Garmi ke Season Ke Liye</h3>
+                    <p class="text-gray-400 mt-4">Konsa power bank best hai? Pura analysis.</p>
                 </div>
             </div>
         </div>
@@ -88,7 +88,7 @@
     </a>
 
     <footer class="bg-black py-16 text-center text-gray-400">
-        <p>© TechDeals PK 2026 • All Rights Reserved</p>
+        <p>© TechDeals PK 2026 • Honest Reviews for Pakistan</p>
     </footer>
 
     <script>
@@ -100,7 +100,6 @@
             {title: "Smart Watch Ultra", price: "₹3,499 - 6,999", rating: "4.4", desc: "Calling + Fitness", img: "https://picsum.photos/id/251/800/600", link: "https://www.daraz.pk/catalog/?q=smart+watch"}
         ];
 
-        // Render Products
         const container = document.getElementById('productsContainer');
         products.forEach(p => {
             container.innerHTML += `
@@ -109,7 +108,7 @@
                     <div class="p-8">
                         <h3 class="text-2xl font-semibold">${p.title}</h3>
                         <p class="text-green-400 text-3xl font-bold mt-3">${p.price}</p>
-                        <p class="text-yellow-400 mt-2">★★★★☆ (${p.rating})</p>
+                        <p class="text-yellow-400">★★★★☆ (${p.rating})</p>
                         <p class="text-gray-400 mt-4">${p.desc}</p>
                         <a href="${p.link}" target="_blank" class="mt-8 block bg-purple-600 hover:bg-purple-500 py-5 rounded-2xl text-center font-medium">Daraz Pe Khareedo →</a>
                     </div>
